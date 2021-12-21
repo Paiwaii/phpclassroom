@@ -4,12 +4,12 @@
   $data = json_decode($json);
 
     echo "<center><b>รายงานสถานการณ์โควิด-19 แยกจังหวัด</b></center>";
-    echo "<br><br>";
+    echo "<br>";
 
 echo '<body style="background-color:...">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:...'>ลำดับ</td>
-      <td style= 'background-color:...'>จังหวัด</td>
+echo "<tr><td style= 'background-color:87CEEB'>ลำดับ</td>
+      <td style= 'background-color:ADD8E6'>จังหวัด</td>
       <td style= 'background-color:...'>จำนวนผู้ป่วยใหม่</td>
       <td style= 'background-color:...'>จำนวนผู้ป่วยสะสม</td>
       <td style= 'background-color:...'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
