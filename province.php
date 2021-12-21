@@ -9,11 +9,11 @@
 echo '<body style="background-color:...">';
 echo "<center><table border='1'>";
 echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
-      <td style= 'background-color:ADD8E6'>จังหวัด</td>
-      <td style= 'background-color:...'>จำนวนผู้ป่วยใหม่</td>
-      <td style= 'background-color:...'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:...'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:...'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
+      <td style= 'background-color:FFCCCC'>จังหวัด</td>
+      <td style= 'background-color:ADD8E6'>จำนวนผู้ป่วยใหม่</td>
+      <td style= 'background-color:F0FFF0'>จำนวนผู้ป่วยสะสม</td>
+      <td style= 'background-color:FFF8DC'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
+      <td style= 'background-color:'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
       <td style= 'background-color:...'>จำนวนผู้เสียชีวิต</td>
       <td style= 'background-color:...'>จำนวนผู้เสียชีวิตสะสม</td>
       </tr>";
@@ -23,13 +23,13 @@ foreach($data as $key=>$val){
   echo "<td style= 'background-color:E6E6FA'>";
   echo ($key+1);
   echo "</td>";
-  echo "<td style= 'background-color:FOF8FF'>";
+  echo "<td style= 'background-color:FFF0F5'>";
   echo $val->province;
   echo "</td>";
-  echo "<td style= 'background-color:...'>";
+  echo "<td style= 'background-color:F0F8FF'>";
   echo $val->new_case;
   echo "</td>";
-  echo "<td style= 'background-color:...'>";
+  echo "<td style= 'background-color:FFE4B5'>";
   echo $val->total_case;
   echo "</td>";
   echo "<td style= 'background-color:...'>";
