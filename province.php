@@ -8,7 +8,7 @@
 
 echo '<body style="background-color:...">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:87CEEB'>ลำดับ</td>
+echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
       <td style= 'background-color:ADD8E6'>จังหวัด</td>
       <td style= 'background-color:...'>จำนวนผู้ป่วยใหม่</td>
       <td style= 'background-color:...'>จำนวนผู้ป่วยสะสม</td>
@@ -20,10 +20,10 @@ echo "<tr><td style= 'background-color:87CEEB'>ลำดับ</td>
   
 foreach($data as $key=>$val){
   echo "<tr>";
-  echo "<td style= 'background-color:...'>";
+  echo "<td style= 'background-color:E6E6FA'>";
   echo ($key+1);
   echo "</td>";
-  echo "<td style= 'background-color:...'>";
+  echo "<td style= 'background-color:FOF8FF'>";
   echo $val->province;
   echo "</td>";
   echo "<td style= 'background-color:...'>";
