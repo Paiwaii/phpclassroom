@@ -49,7 +49,7 @@ foreach($data as $key=>$val){
 echo "</table></center>";
 
 echo "<br><br>";
-echo "<center>“วันที่อัพเดต : "$val->txn_date</center>";
+echo "<center>วันที่อัพเดต : $val->txn_date</center>";
 echo "<center>$val->txn_date</center>";
 
 ?>
