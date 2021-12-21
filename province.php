@@ -12,8 +12,8 @@ echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
       <td style= 'background-color:9999CC'>จังหวัด</td>
       <td style= 'background-color:ADD8E6'>จำนวนผู้ป่วยใหม่</td>
       <td style= 'background-color:ADD8E6'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:E9967A'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:FFCC33'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
+      <td style= 'background-color:CD9B9B'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
+      <td style= 'background-color:CD9B9B'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
       <td style= 'background-color:'>จำนวนผู้เสียชีวิต</td>
       <td style= 'background-color:...'>จำนวนผู้เสียชีวิตสะสม</td>
       </tr>";
@@ -32,10 +32,10 @@ foreach($data as $key=>$val){
   echo "<td style= 'background-color:F0F8FF'>";
   echo $val->total_case;
   echo "</td>";
-  echo "<td style= 'background-color:FFF8DC'>";
+  echo "<td style= 'background-color:EED5D2'>";
   echo $val->new_case_excludeabroad;
   echo "</td>";
-  echo "<td style= 'background-color:FFE4B5'>";
+  echo "<td style= 'background-color:EED5D2'>";
   echo $val->total_case_excludeabroad;
   echo "</td>";
   echo "<td style= 'background-color:...'>";
