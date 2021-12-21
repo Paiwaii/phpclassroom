@@ -8,7 +8,7 @@
 
 echo '<body style="background-color:...">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
+echo "<center><tr><td style= 'background-color:9999CC'>ลำดับ</td>
       <td style= 'background-color:9999CC'>จังหวัด</td>
       <td style= 'background-color:ADD8E6'>จำนวนผู้ป่วยใหม่</td>
       <td style= 'background-color:ADD8E6'>จำนวนผู้ป่วยสะสม</td>
@@ -16,7 +16,7 @@ echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
       <td style= 'background-color:CD9B9B'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
       <td style= 'background-color:A2CD5A'>จำนวนผู้เสียชีวิต</td>
       <td style= 'background-color:A2CD5A'>จำนวนผู้เสียชีวิตสะสม</td>
-      </tr>";
+      </tr></center>";
   
 foreach($data as $key=>$val){
   echo "<tr>";
@@ -50,7 +50,6 @@ echo "</table></center>";
 
 echo "<br><br>";
 echo "<center>วันที่อัพเดต : $val->txn_date</center>";
-echo "<center>$val->txn_date</center>";
 
 ?>
   
