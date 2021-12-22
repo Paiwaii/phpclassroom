@@ -6,7 +6,7 @@
     echo "<center><b>รายงานสถานการณ์โควิด-19 แยกจังหวัด</b></center>";
     echo "<br>";
 
-echo '<body style="background-color:FFFFFF">';
+echo '<body style="background-color:F5F5F5">';
 echo "<center><table border='1'>";
 echo "<tr align='center'><td style= 'background-color:9999CC'><b>ลำดับ</b></td>
       <td style= 'background-color:9999CC'><b>จังหวัด</b></td>
