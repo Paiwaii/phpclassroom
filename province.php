@@ -16,7 +16,7 @@ echo "<tr><td style= 'background-color:9999CC'>ลำดับ</td>
       <td style= 'background-color:CD9B9B'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
       <td style= 'background-color:A2CD5A'>จำนวนผู้เสียชีวิต</td>
       <td style= 'background-color:A2CD5A'>จำนวนผู้เสียชีวิตสะสม</td>
-      </tr></center>";
+      </tr>";
   
 foreach($data as $key=>$val){
   echo "<tr>";
