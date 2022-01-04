@@ -39,26 +39,26 @@
     </div>
     
     <div class="row">
-        <div id="col1" class="col-4">
+        <div id="col1" class="col-2">
           Column
         </div>
-        <div id="col2"  class="col-4">
+        <div id="col2"  class="col-2">
           Column
         </div>
-        <div id="col3"  class="col-4">
+        <div id="col3"  class="col-2">
           Column
         </div>
       </div>
     </div>
   
   <div class="row">
-        <div id="col1" class="col-4">
+        <div id="col1" class="col-2">
           Column
         </div>
-        <div id="col2"  class="col-4">
+        <div id="col2"  class="col-2">
           Column
         </div>
-        <div id="col3"  class="col-4">
+        <div id="col3"  class="col-2">
           Column
         </div>
       </div>
