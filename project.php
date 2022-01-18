@@ -57,8 +57,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">จัดทำโดย</h5>
-              <p class="card-text">นายยิ่งคุณ รอดทิม </p>
-              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 0 , 88888</small></p>
+              <p class="card-text">นางสาวสรัลพร สีป้อ </p>
+              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 26 , 55817</small></p>
             </div>
           </div>
         </div>
