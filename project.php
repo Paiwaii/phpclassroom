@@ -125,13 +125,17 @@
       <div class="col">
         <table class="table table-striped rounded-3">
           <tr>
-            <th>#</th>
-            <th>จังหวัด</th>
-            <th>ผู้ป่วยใหม่</th>
-            <th>ผู้ป่วยสะสม</th>
-            <th>เสียชีวิต</th>
-            <th>เสียชีวิตรวม</th>
-          </tr>
+echo '<body style="background-color:F5F5F5">';
+echo "<center><table border='1'>";
+echo "<tr align='center'><td style= 'background-color:9999CC'><b>ลำดับ</b></td>
+      <td style= 'background-color:9999CC'><b>จังหวัด</b></td>
+      <td style= 'background-color:ADD8E6'><b>จำนวนผู้ป่วยใหม่</b></td>
+      <td style= 'background-color:ADD8E6'><b>จำนวนผู้ป่วยสะสม</b></td>
+      <td style= 'background-color:CD9B9B'><b>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</b></td>
+      <td style= 'background-color:CD9B9B'><b>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</b></td>
+      <td style= 'background-color:A2CD5A'><b>จำนวนผู้เสียชีวิต</b></td>
+      <td style= 'background-color:A2CD5A'><b>จำนวนผู้เสียชีวิตสะสม</br></td>
+        </tr>";
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
 foreach($data as $key=>$val){
