@@ -1,4 +1,3 @@
-
 <?php 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
   $data = json_decode($json);
@@ -85,7 +84,7 @@
       <div class="col-3">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 bg-success text-white">
-            <h4 class="my-0 fw-normal">หายป่วยกลับบ้าน</h4>
+            <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
@@ -95,7 +94,7 @@
       <div class="col-3">
         <div class="card mb-4 rounded-3 shadow-sm ">
           <div class="card-header py-3 bg-warning text-white">
-            <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
+            <h4 class="my-0 fw-normal">ผู้เสียชีวิตรายใหม่</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
@@ -105,7 +104,7 @@
       <div class="col-3">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 bg-dark text-white">
-            <h4 class="my-0 fw-normal">เสียชีวิต</h4>
+            <h4 class="my-0 fw-normal">ผู้เสียชีวิตรวม</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
@@ -129,7 +128,7 @@
             <th>#</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
+            <th>เสียชีวิตรวม</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
           </tr>
