@@ -134,14 +134,20 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
+foreach($data as $key=>$val){
+   echo "<tr align='center'>";
+   echo "<td style= 'background-color:E6E6FA'>";
+   echo ($key+1);
+   echo "</td>";
+   echo "<td style= 'background-color:E6E6FA'>";
+   echo $val->province;
+   echo "</td>";
+   echo "<td style= 'background-color:F0F8FF'>";
+   echo $val->new_case;
+   echo "</td>";
+   echo "<td style= 'background-color:F0F8FF'>";
+   echo $val->total_case;
+   echo "</td>";
           <tr>
             <td> - </td>
             <td> - </td>
