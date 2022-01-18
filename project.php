@@ -135,19 +135,28 @@
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
 foreach($data as $key=>$val){
-   echo "<tr align='center'>";
-   echo "<td style= 'background-color:E6E6FA'>";
-   echo ($key+1);
-   echo "</td>";
-   echo "<td style= 'background-color:E6E6FA'>";
-   echo $val->province;
-   echo "</td>";
-   echo "<td style= 'background-color:F0F8FF'>";
-   echo $val->new_case;
-   echo "</td>";
-   echo "<td style= 'background-color:F0F8FF'>";
-   echo $val->total_case;
-   echo "</td>";
+  echo "<tr align='center'>";
+  echo "<td style= 'background-color:E6E6FA'>";
+  echo ($key+1);
+  echo "</td>";
+  echo "<td style= 'background-color:E6E6FA'>";
+  echo $val->province;
+  echo "</td>";
+  echo "<td style= 'background-color:F0F8FF'>";
+  echo $val->new_case;
+  echo "</td>";
+  echo "<td style= 'background-color:F0F8FF'>";
+  echo $val->total_case;
+  echo "</td>";
+  echo "<td style= 'background-color:E0EEE0'>";
+  echo $val->new_death;
+  echo "</td>";
+  echo "<td style= 'background-color:E0EEE0'>";
+  echo $val->total_death;
+  echo "</td>";
+  echo "</tr>";
+}
+echo "</table></center>";
           <tr>
             <td> - </td>
             <td> - </td>
