@@ -87,7 +87,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <h4 class="my-0 fw-normal">ผู้เสียชีวิตรายใหม่</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             <h4 class="my-0 fw-normal">ผู้เสียชีวิตรวม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -128,9 +128,9 @@
             <th>#</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>เสียชีวิตรวม</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
+            <th>เสียชีวิตรวม</th>
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
