@@ -51,7 +51,7 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="profile.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="64531126_483318555737266_5380040068360568832_n.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -84,6 +84,16 @@
       <div class="col-3">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 bg-success text-white">
+            <h4 class="my-0 fw-normal">เสียชีวิตรวม</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card mb-4 rounded-3 shadow-sm ">
+          <div class="card-header py-3 bg-warning text-white">
             <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
@@ -92,32 +102,24 @@
         </div>
       </div>
       <div class="col-3">
-        <div class="card mb-4 rounded-3 shadow-sm ">
-          <div class="card-header py-3 bg-warning text-white">
-            <h4 class="my-0 fw-normal">ผู้เสียชีวิตรายใหม่</h4>
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3 bg-dark text-white">
+            <h4 class="my-0 fw-normal">เสียชีวิต</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3 bg-dark text-white">
-            <h4 class="my-0 fw-normal">ผู้เสียชีวิตรวม</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
-          </div>
-        </div>
-      </div>
     </div>
 
   </main>
-
+ 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+       
+        
         <h1 class="display-7 fw-normal">รายงานข้อมูล Covid-19 แยกจังหวัด</h1>
       </div>
     </header>
@@ -125,40 +127,44 @@
       <div class="col">
         <table class="table table-striped rounded-3">
           <tr>
-            <th>#</th>
+            <th>ลำดับ</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
+            <th>เสียชีวิตรวม</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
-            <th>เสียชีวิตรวม</th>
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-        </table>
+          <?php
+      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+        $data = json_decode($json);     
+foreach($data as $key=>$val){
+  echo "<tr>";
+  echo "<td>";
+  echo ($key+1);
+  echo "</td>";
+  echo "<td>";
+  echo $val->province;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_death;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_death;
+  echo "</td>";
+ 
+  echo "</tr>";
+}
+?>
+
+    </table>
       </div>
     </div>
 
